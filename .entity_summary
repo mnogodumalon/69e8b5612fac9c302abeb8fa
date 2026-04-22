@@ -1,0 +1,1 @@
+- Gericht (gericht): gericht_name[string/text], beschreibung[string/textarea], preis[number], kategorie[lookup/select]

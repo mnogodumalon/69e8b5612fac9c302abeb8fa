@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "gericht",
+      "app_id": "69e8b527888384266c89ea2c",
+      "path": "/rest/apps/69e8b527888384266c89ea2c/records",
+      "allowed_fields": [
+        "gericht_name",
+        "beschreibung",
+        "preis",
+        "kategorie"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Gericht — Formular"
+    }
+  ]
+}

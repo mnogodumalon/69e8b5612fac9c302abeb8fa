@@ -1,0 +1,85 @@
+{
+  "appgroup_id": "69e8b5612fac9c302abeb8fa",
+  "appgroup_name": "Gemeinsame Essensbestellung",
+  "apps": {
+    "gericht": {
+      "app_id": "69e8b527888384266c89ea2c",
+      "name": "Gericht",
+      "controls": {
+        "gericht_name": {
+          "identifier": "gericht_name",
+          "label": "Name des Gerichts",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "beschreibung": {
+          "identifier": "beschreibung",
+          "label": "Beschreibung",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "preis": {
+          "identifier": "preis",
+          "label": "Preis (€)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "description": "A decimal number value (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "precision": null
+        },
+        "kategorie": {
+          "identifier": "kategorie",
+          "label": "Kategorie",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_data": {
+            "hauptgericht": "Hauptgericht",
+            "beilage": "Beilage",
+            "vorspeise": "Vorspeise",
+            "dessert": "Dessert",
+            "getraenk": "Getränk"
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Gericht"
+    ]
+  }
+}
